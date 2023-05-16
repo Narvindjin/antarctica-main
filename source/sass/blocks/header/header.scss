@@ -1,0 +1,186 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+  padding-top: 35px;
+
+  @include vp-1365 {
+    padding-top: 30px;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+  }
+}
+
+.header__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include vp-767 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.header__logo-link {
+  color: $color-default-white;
+  display: flex;
+  height: 38px;
+  width: 70px;
+  min-width: 70px;
+
+  @include vp-1365 {
+    height: 20px;
+    width: 38px;
+    min-width: 38px;
+  }
+
+  @include vp-767 {
+    height: 22px;
+    width: 42px;
+    min-width: 42px;
+  }
+
+  @include hover-focus {
+    svg {
+      opacity: 0.7;
+    }
+  }
+}
+
+.header__logo-link svg {
+  width: 100%;
+  height: 100%;
+  transition: opacity $trans-default;
+}
+
+.header__links-open {
+  display: none;
+  background: transparent;
+  border: none;
+  width: 24px;
+  height: 14px;
+  color: $color-default-white;
+  padding: 0;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.header__links-close {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin-top: 5px;
+}
+
+.header__links-logo {
+  color: $color-default-black;
+  display: flex;
+}
+
+.header__links-top-menu {
+  display: none;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 33px;
+  }
+}
+
+.header__links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include vp-767 {
+    display: none;
+    position: absolute;
+    justify-content: start;
+    background-color: $color-default-white;
+    height: 100vh;
+    top: 0;
+    z-index: 12;
+    width: 89vw;
+    right: -89vw;
+    transition: right $trans-default;
+    padding: 20px 15px 0 15px;
+  }
+}
+
+.header__links-container--opening {
+  @include vp-767 {
+    display: flex;
+  }
+}
+
+.header__links-container--open {
+  @include vp-767 {
+    display: flex;
+    right: 0;
+  }
+}
+
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  color: $color-default-white;
+  font-weight: 500;
+  gap: 33px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+  @include vp-1365 {
+    gap: 24px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.header__link {
+  color: $color-default-white;
+  display: flex;
+  line-height: 2rem;
+  min-height: 38px;
+  align-items: center;
+  transition: opacity $trans-default;
+
+  @include vp-1365 {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    min-height: 20px;
+  }
+
+  @include vp-767 {
+    color: $color-default-black;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    width: 100%;
+    padding: 10px 30px 8px 25px;
+  }
+
+  @include hover-focus {
+    opacity: 0.7;
+  }
+}

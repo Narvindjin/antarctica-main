@@ -1,0 +1,84 @@
+.intro {
+  position: relative;
+  display: flex;
+  min-height: 650px;
+  margin-bottom: 120px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include vp-1365 {
+    margin-bottom: 91px;
+    box-shadow: none;
+    min-height: 638px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 56px;
+    min-height: 500px;
+  }
+}
+
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro__text-container {
+  position: relative;
+  display: flex;
+  padding-bottom: 8px;
+  flex-direction: column;
+  margin-left: 95px;
+  color: $color-default-white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include vp-1365 {
+    margin-left: 0;
+    text-shadow: none;
+  }
+
+  @include vp-767 {
+    max-width: 210px;
+  }
+}
+
+.intro__title {
+  font-weight: 700;
+  font-size: 5.4rem;
+  line-height: 6.6rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  @include vp-1365 {
+    font-size: 5rem;
+    line-height: 6.1rem;
+  }
+
+  @include vp-767 {
+    font-size: 3.6rem;
+    line-height: 4.5rem;
+  }
+}
+
+.intro__background {
+  background-color: $color-default-black;
+
+  @include vp-767 {
+    object-position: 50% 75%;
+  }
+}
+
+.intro__text {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin: 0;
+
+  @include vp-1365 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  @include vp-767 {
+    font-size: 1.6rem;
+  }
+}

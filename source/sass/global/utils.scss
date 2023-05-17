@@ -52,19 +52,6 @@
   overflow: hidden;
 }
 
-/*ниже классы для плавного отображения анимации скрытия и появления карточек и навигации, !important для того, чтобы перебить классы элемента на время анимации*/
-.hide {
-  display: none !important;
-}
-
-.opacity-1 {
-  opacity: 1 !important;
-}
-
-.opacity-0 {
-  opacity: 0 !important;
-}
-
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;

@@ -42,10 +42,6 @@
   clip-path: inset(100%);
 }
 
-.hide {
-  display: none !important;
-}
-
 .scroll-lock-ios {
   position: fixed;
 
@@ -54,6 +50,11 @@
 
 .scroll-lock {
   overflow: hidden;
+}
+
+/*ниже классы для плавного отображения анимации скрытия и появления карточек и навигации, !important для того, чтобы перебить классы элемента на время анимации*/
+.hide {
+  display: none !important;
 }
 
 .opacity-1 {

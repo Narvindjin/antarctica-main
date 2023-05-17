@@ -38,6 +38,7 @@
 
 .cruises__card {
   min-height: 386px;
+  max-height: 386px;
   width: 260px;
   position: relative;
 
@@ -140,6 +141,12 @@
   z-index: 2;
   opacity: 0;
   padding: 28px 25px 20px 25px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   @include vp-1365 {
     padding-left: 35px;

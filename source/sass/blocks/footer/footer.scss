@@ -70,11 +70,9 @@
 
   @include vp-767 {
     flex-direction: row;
-    @include vp-767 {
-      height: 22px;
-      width: 42px;
-      min-width: 42px;
-    }
+    height: 22px;
+    width: 42px;
+    min-width: 42px;
   }
 
   @include hover-focus {
@@ -117,6 +115,7 @@
   padding: 5px;
   display: flex;
   transition: opacity $trans-default;
+
   @include hover-focus {
     opacity: 0.7;
   }

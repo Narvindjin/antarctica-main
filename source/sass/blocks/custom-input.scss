@@ -19,32 +19,32 @@
 
   input,
   textarea {
-      flex-grow: 1;
-      width: 100%;
-      min-height: 43px;
-      margin-left: auto;
-      padding: 9px 14px 9px 14px;
-      background-color: $color-default-white;
-      font-size: 1.4rem;
-      line-height: 2.1rem;
+    flex-grow: 1;
+    width: 100%;
+    min-height: 43px;
+    margin-left: auto;
+    padding: 9px 14px 9px 14px;
+    background-color: $color-default-white;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
 
-      border: 2px solid $color-default-white;
-      outline: none;
+    border: 2px solid $color-default-white;
+    outline: none;
 
-      transition: border 0.3s ease;
+    transition: border 0.3s ease;
 
-      &:hover {
-        border: 2px solid rgba($color-default-black, 0.5);
-      }
-
-      &:focus {
-        border: 2px solid rgba($color-default-black, 0.8);
-      }
-
-      &::placeholder {
-        color: rgba(1, 28, 64, 0.7);
-      }
+    &:hover {
+      border: 2px solid rgba($color-default-black, 0.5);
     }
+
+    &:focus {
+      border: 2px solid rgba($color-default-black, 0.8);
+    }
+
+    &::placeholder {
+      color: rgba(1, 28, 64, 0.7);
+    }
+  }
 
   &__label {
     @media screen and (max-width: 767px) {

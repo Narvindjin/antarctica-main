@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -523,10 +524,6 @@ button,
           clip-path: inset(100%);
 }
 
-.hide {
-  display: none !important;
-}
-
 .scroll-lock-ios {
   position: fixed;
   overflow: hidden;
@@ -534,6 +531,11 @@ button,
 
 .scroll-lock {
   overflow: hidden;
+}
+
+/*ниже классы для плавного отображения анимации скрытия и появления карточек и навигации, !important для того, чтобы перебить классы элемента на время анимации*/
+.hide {
+  display: none !important;
 }
 
 .opacity-1 {
@@ -589,7 +591,7 @@ button,
   z-index: -1;
   top: 0;
   left: 0;
-  background-color: aqua;
+  background-color: #add8e6;
 }
 
 .header {
@@ -879,7 +881,7 @@ button,
 }
 
 .advantages__background {
-  background-color: lightblue;
+  background-color: #add8e6;
 }
 
 .advantages__title {
@@ -1124,8 +1126,8 @@ button,
 .booking__form-container {
   background: #011c40;
   color: #f9fbfd;
-  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-          box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+          box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   padding: 43px 50px 50px 50px;
   width: 35%;
   margin-right: 60px;
@@ -1211,6 +1213,7 @@ button,
 
 .cruises__card {
   min-height: 386px;
+  max-height: 386px;
   width: 260px;
   position: relative;
 }
@@ -1340,6 +1343,11 @@ button,
   z-index: 2;
   opacity: 0;
   padding: 28px 25px 20px 25px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+.cruises__inner-card::-webkit-scrollbar {
+  display: none;
 }
 @media (max-width: 1365px) {
   .cruises__inner-card {
@@ -1640,8 +1648,8 @@ button,
   display: flex;
   min-height: 650px;
   margin-bottom: 120px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 1365px) {
   .intro {
@@ -1683,7 +1691,7 @@ button,
           flex-direction: column;
   margin-left: 95px;
   color: #f9fbfd;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 1365px) {
   .intro__text-container {
@@ -1865,10 +1873,6 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-}
-@media (max-width: 767px) and (max-width: 767px) {
-  .footer__logo-link {
     height: 22px;
     width: 42px;
     min-width: 42px;

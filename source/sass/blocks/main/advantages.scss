@@ -3,7 +3,7 @@
   padding-bottom: 120px;
   position: relative;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-top: 90px;
     padding-bottom: 100px;
   }
@@ -26,7 +26,7 @@
   font-size: 2.8rem;
   line-height: 4.2rem;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 2.6rem;
     line-height: 3.9rem;
   }
@@ -45,21 +45,21 @@
 }
 
 .advantages__image--checkmarks {
-  @include vp-1365 {
+  @include vp-1023 {
     width: 27px;
     height: 26px;
   }
 }
 
 .advantages__image--cruiser {
-  @include vp-1365 {
+  @include vp-1023 {
     width: 21px;
     height: 26px;
   }
 }
 
 .advantages__image--zodiac {
-  @include vp-1365 {
+  @include vp-1023 {
     width: 36px;
     height: 26px;
   }
@@ -74,7 +74,7 @@
   grid-auto-flow: row;
   gap: 40px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     gap: 30px;
   }
 
@@ -90,13 +90,13 @@
   background-color: $color-default-white;
   padding: 30px 30px 45px 30px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 26px 16px 20px 20px;
   }
 }
 
 .advantages__item:last-of-type .advantages__item-text {
-  @include vp-1365 {
+  @include vp-1023 {
     margin-top: 10px;
   }
 
@@ -112,12 +112,8 @@
   margin-top: 0;
   margin-bottom: 10px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     line-height: 2.5rem;
-  }
-
-  @include vp-767 {
-    width: 175px;
   }
 }
 

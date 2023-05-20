@@ -2,7 +2,7 @@
   position: relative;
   padding: 50px 0 50px 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 87px 0 100px 0;
   }
 
@@ -17,7 +17,7 @@
   flex-direction: row;
   justify-content: space-between;
 
-  @include vp-1365 {
+  @include vp-1023 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -30,7 +30,7 @@
   margin-left: 60px;
   padding-bottom: 9px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: auto;
     margin-bottom: 52px;
     margin-left: 0;
@@ -49,7 +49,7 @@
   margin-top: 0;
   margin-bottom: 8px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 3.4rem;
     line-height: 5.1rem;
     margin-bottom: 5px;
@@ -71,7 +71,7 @@
   line-height: 2.7rem;
   max-width: 360px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -90,11 +90,13 @@
   padding: 43px 50px 50px 50px;
   width: 35%;
   margin-right: 60px;
+  width: 403px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: auto;
     max-width: 403px;
     margin-right: 0;
+    min-width: unset;
   }
 
   @include vp-767 {

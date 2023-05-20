@@ -2,7 +2,7 @@
   padding-top: 120px;
   padding-bottom: 120px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -17,8 +17,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 100px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     gap: 30px;
   }
 
@@ -29,29 +30,35 @@
 }
 
 .directions__map-container {
-  width: 560px;
-  height: 306px;
+  display: flex;
+  min-width: 48.3%;
+  min-height: 306px;
+  flex-grow: 1;
+  position: relative;
 
-  @include vp-1365 {
+  @include vp-1023 {
+    min-width: unset;
     width: 100%;
-    height: 335px;
+    min-height: 335px;
   }
 
   @include vp-767 {
-    height: 316px;
+    min-height: 316px;
   }
 }
 
 .directions__map-container iframe {
+  display: flex;
+  flex-grow: 1;
   width: 100%;
   height: 100%;
+  position: absolute;
 }
 
 .directions__text-container {
-  width: 500px;
   margin-top: 74px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: 100%;
     margin-top: 65px;
   }
@@ -69,7 +76,7 @@
   margin-top: 0;
   margin-bottom: 33px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-bottom: 27px;
   }
 }
@@ -93,7 +100,7 @@
   left: 0;
   top: 1px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     top: 2px;
   }
 }
@@ -102,4 +109,12 @@
   position: absolute;
   left: 0;
   top: 3px;
+}
+
+.directions__link {
+  transition: opacity $trans-default;
+
+  @include hover-focus {
+    opacity: 0.7;
+  }
 }

@@ -3,7 +3,7 @@
   padding-bottom: 120px;
   background-color: $color-default-white;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-top: 90px;
     padding-bottom: 100px;
   }
@@ -23,7 +23,7 @@
   margin-top: 0;
   margin-bottom: 50px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 2.6rem;
     line-height: 3.9rem;
     margin-bottom: 49px;
@@ -53,12 +53,13 @@
     }
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: 309px;
   }
 
   @include vp-767 {
-    width: 270px;
+    width: 100%;
+    aspect-ratio: 270/386;
   }
 }
 
@@ -148,7 +149,7 @@
     display: none;
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-left: 35px;
     padding-right: 35px;
   }
@@ -183,7 +184,7 @@
   margin-bottom: 23px;
   margin-left: 30px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-bottom: 28px;
     margin-left: 35px;
   }

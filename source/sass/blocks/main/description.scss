@@ -2,7 +2,7 @@
   margin-bottom: 145px;
   background-color: $color-default-white;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-bottom: 95px;
   }
 
@@ -17,7 +17,7 @@
   justify-content: space-between;
   gap: 7.5%;
 
-  @include vp-1365 {
+  @include vp-1023 {
     gap: 30px;
   }
 
@@ -30,7 +30,7 @@
 .description__image-container {
   min-width: 48%;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-top: 9px;
   }
 
@@ -52,7 +52,7 @@
   margin-top: 0;
   margin-bottom: 30px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 2.6rem;
     line-height: 3.6rem;
     margin-bottom: 15px;

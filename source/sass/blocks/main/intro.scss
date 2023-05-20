@@ -4,8 +4,10 @@
   min-height: 650px;
   margin-bottom: 120px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 70px;
+  padding-bottom: 70px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-bottom: 91px;
     box-shadow: none;
     min-height: 638px;
@@ -35,10 +37,6 @@
   @include vp-1365 {
     margin-left: 0;
     text-shadow: none;
-  }
-
-  @include vp-767 {
-    max-width: 210px;
   }
 }
 

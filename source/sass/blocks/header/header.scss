@@ -4,7 +4,7 @@
   z-index: 11;
   padding-top: 35px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-top: 30px;
   }
 
@@ -37,7 +37,7 @@
   width: 70px;
   min-width: 70px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     height: 20px;
     width: 38px;
     min-width: 38px;
@@ -83,6 +83,7 @@
   padding: 0;
   border: none;
   margin-top: 5px;
+  color: $color-default-black;
 }
 
 .header__links-logo {
@@ -118,6 +119,7 @@
     right: -89vw;
     transition: right $trans-default;
     padding: 20px 15px 0 15px;
+    overflow-y: scroll;
   }
 }
 
@@ -146,7 +148,7 @@
   margin-bottom: 0;
   padding: 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     gap: 24px;
   }
 
@@ -166,7 +168,7 @@
   align-items: center;
   transition: opacity $trans-default;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 1.4rem;
     line-height: 1.7rem;
     min-height: 20px;

@@ -1221,15 +1221,15 @@ button,
 }
 @media (max-width: 1023px) {
   .cruises__card {
-    width: 309px;
+    width: calc((100% - 30px) / 2);
+    min-height: unset;
+    max-height: unset;
+    aspect-ratio: 270/386;
   }
 }
 @media (max-width: 767px) {
   .cruises__card {
     width: 100%;
-    aspect-ratio: 270/386;
-    min-height: unset;
-    max-height: unset;
   }
 }
 

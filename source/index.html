@@ -502,7 +502,7 @@
                 <label class="visually-hidden" for="user-phone">Телефон</label>
                 <input id="user-phone" name="user-phone" type="tel" placeholder="Телефон" required>
               </div>
-              <div class="custom-input" data-validate-type="email">
+              <div class="custom-input" data-validate-type="email" data-required>
                 <label class="visually-hidden" for="user-mail">Электронная почта</label>
                 <input id="user-mail" name="user-mail" placeholder="Email" required></input>
               </div>
@@ -519,7 +519,7 @@
       <section class="directions" id="contacts">
         <div class="container directions__container">
           <div class="directions__map-container">
-            <iframe sandbox="allow-scripts allow-same-origin" src="https://yandex.ru/map-widget/v1/?um=constructor%3A04025f89700dfe4d23b94aa53e4d8708d12a3bfd2be65d6e45ef437635edf0ea&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+            <iframe title="Карта, как к нам добраться" loading="lazy" sandbox="allow-scripts allow-same-origin" src="https://yandex.ru/map-widget/v1/?um=constructor%3A04025f89700dfe4d23b94aa53e4d8708d12a3bfd2be65d6e45ef437635edf0ea&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
           </div>
           <div class="directions__text-container">
             <p class="directions__text">У&nbsp;вас ещё остались вопросы или сомнения?
@@ -532,7 +532,7 @@
                 <svg width="18" height="18" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#phone"></use>
                 </svg>
-                <a href="tel:88002000000">8-800-200-00-00</a>
+                <a class="directions__link" href="tel:88002000000">8-800-200-00-00</a>
               </p>
             </address>
           </div>

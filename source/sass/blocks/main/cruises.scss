@@ -60,6 +60,8 @@
   @include vp-767 {
     width: 100%;
     aspect-ratio: 270/386;
+    min-height: unset;
+    max-height: unset;
   }
 }
 
